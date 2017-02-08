@@ -9,6 +9,7 @@ const WiresNewForm = (props, context) => {
       <div className="posts-new-form">
         <Components.SmartForm
           collection={Wires}
+          prefilledProps={props.prefilledProps || {}}
           successCallback={wire => {
             props.flash(context.intl.formatMessage({id: "wires.created_message"}), "success");
           }}
