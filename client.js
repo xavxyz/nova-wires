@@ -1,1 +1,3 @@
-import './lib/modules.js';
+import Wires from './lib/modules.js';
+
+export default Wires;
