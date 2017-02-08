@@ -15,5 +15,8 @@ Package.onUse( function(api) {
 
   api.mainModule('client.js', ['client']);
   api.mainModule('server.js', ['server']);
-
+  
+  api.addAssets([
+    'lib/emails/newWire.handlebars',
+  ], ['server']);
 });

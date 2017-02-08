@@ -3,3 +3,15 @@
 Allow your users to contact each others via email. 📧 
 
 Like carrier pigeons *2.0*. 🐦
+
+## Rate limiting
+
+#### `wireInterval`
+Check that user waits more than X seconds between messages (wires). 
+
+Default value: 60 secs.
+
+#### `maxWiresPerDay`
+Check that the user doesn't post more than Y messages (wires) per day. 
+
+Default value: 3 per day.
