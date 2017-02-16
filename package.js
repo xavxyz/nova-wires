@@ -1,6 +1,6 @@
 Package.describe({
   name: "xavcz:nova-wires",
-  version: "1.0.0",
+  version: "1.1.0",
 });
 
 Package.onUse( function(api) {
@@ -8,9 +8,10 @@ Package.onUse( function(api) {
   api.versionsFrom("METEOR@1.0");
 
   api.use([
-    'nova:core@1.0.0',
-    'nova:users@1.0.0',
-    'nova:email@1.0.0',
+    'nova:core@1.1.0',
+    'nova:users@1.1.0',
+    'nova:email@1.1.0',
+    'nova:notifications@1.1.0',
   ]);
 
   api.mainModule('client.js', ['client']);

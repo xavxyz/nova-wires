@@ -11,6 +11,11 @@ const WiresNewForm = (props, context) => {
           collection={Wires}
           prefilledProps={props.prefilledProps || {}}
           successCallback={wire => {
+            // if the form is embed in a modal, close this modal by default
+            if (typeof props.closeModal === 'function') {
+              console.log('test');
+              props.closeModal();
+            }
             props.flash(context.intl.formatMessage({id: "wires.created_message"}), "success");
           }}
         />
@@ -21,6 +26,8 @@ const WiresNewForm = (props, context) => {
 
 WiresNewForm.propTypes = {
   flash: React.PropTypes.func,
+  prefilledProps: React.PropTypes.object,
+  successCallback: React.PropTypes.func,
 };
 
 WiresNewForm.contextTypes = {
