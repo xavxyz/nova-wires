@@ -4,6 +4,8 @@ Allow your users to contact each others via email. 📧
 
 Like carrier pigeons *2.0*. 🐦
 
+*Notes: At the moment, you have to manually specify the recipientId, see [#2](https://github.com/xavcz/nova-wires/issues/2) for some workarounds.*
+
 ## Rate limiting
 
 #### `wireInterval`
