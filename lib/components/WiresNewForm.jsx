@@ -1,4 +1,4 @@
-import { Components, registerComponent, withMessages } from 'meteor/nova:core';
+import { Components, registerComponent, withMessages } from 'meteor/vulcan:core';
 import React, { PropTypes, Component } from 'react';
 import { intlShape } from 'react-intl';
 import Wires from "../collection.js";
